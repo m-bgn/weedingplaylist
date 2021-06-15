@@ -2,16 +2,16 @@ class SongsController < ApplicationController
 
   def new
     @song = Song.new
-    @playlist = Playlist.find(1)
+    @playlist = Playlist.find(params[:id])
   end
 
   def create
     @song = Song.new(song_params)
-    @playlist = Playlist.find(1)
+    @playlist = Playlist.find(params[:id])
     @song.playlist_id = @playlist.id
     if @song.save
       flash.notice = "#{@song.title} has been added to #{@playlist.name}"
-      redirect_to
+      redirect_to home_path
     else
       render :new
     end
