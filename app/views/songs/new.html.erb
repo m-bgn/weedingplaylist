@@ -2,13 +2,15 @@
 
 <div class="container">
    <div class="form-wrapper" id="booking-form-div">
-      <%= simple_form_for(resource, as: resource_name, url: new_song_path(resource_name)) do |f| %>
+      <%= simple_form_for @song do |f| %>
         <%= f.error_notification %>
 
         <div class="form-inputs">
           <%= f.input :artist, required: true %>
           <%= f.input :title, required: true %>
+
            <%# input_html: { autocomplete: "email" } %>
+
         </div>
 
         <div class="form-actions">
