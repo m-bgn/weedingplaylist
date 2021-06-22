@@ -2,10 +2,6 @@
   border-radius: 25px !important;
 }
 
-.button-song {
-  border: 1px;
-}
-
 .new-form {
   margin-top: 50%;
   padding: 20px;
@@ -13,15 +9,19 @@
 
 .container-form {
   background-color: #1F5C87;
+  border-radius: 25px;
 }
 
 .form-group {
   margin-bottom: 4rem !important;
 }
+.form-control {
+  border-radius: 25px !important;
+}
 
-.label {
+label {
   color: white !important;
-  font-size: 16px !important;
+  font-size: 24px !important;
 }
 
 .btn-song {
@@ -29,6 +29,11 @@
   border-radius: 20px;
   background-color: yellow;
   color: #1F5C87;
+  font-size: 24px;
+}
+
+.input-form {
+  border-radius: 25px;
 }
 
 
