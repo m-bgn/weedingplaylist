@@ -1,20 +1,24 @@
 <%# form to add new songs to playlist %>
 
-<div class="container">
-   <div class="form-wrapper" id="booking-form-div">
+<div class="container container-form">
+   <div class="form-wrapper col-sm-12 col-lg-6 text-center new-form" id="booking-form-div">
       <%= simple_form_for @song do |f| %>
         <%= f.error_notification %>
 
         <div class="form-inputs">
-          <%= f.input :artist, required: true %>
-          <%= f.input :title, required: true %>
+          <div class="input-song">
+            <%= f.input :artist, required: true, class: "input-form" %>
+          </div>
+          <div class="input-artist">
+            <%= f.input :title, required: true, class: "input-form" %>
+          </div>
 
            <%# input_html: { autocomplete: "email" } %>
 
         </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "add to playlist", class: "button-orange button-new-trip" %>
+          <%= f.button :submit, "add to playlist", class: "btn-song" %>
         </div>
       <% end %>
     </div>
