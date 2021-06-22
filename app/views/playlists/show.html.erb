@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="sm-12 playlist-show">
-  <h1><%= @playlist.name %></h1>
+  <div class="playlist-show text-center">
+  <h4><%= @playlist.name %> 🎹</h4>
     <ul>
       <% @playlist.songs.each do |song| %>
-        <li><%= song.title %> - <%= song.artist %></li>
+        <li class="song-line"><%= song.title %> - <%= song.artist %></li>
       <% end %>
     </ul>
-    <%= link_to "Add a new song", new_song_path%>
+    <%= link_to "Add a new song", new_song_path, class: "btn-song-pl"%>
   </div>
 </div>
