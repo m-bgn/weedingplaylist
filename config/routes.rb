@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'songs#new'
+  root 'song#new'
   # resources :playlists, only: [:show]
   resources :songs, only: [:new, :create]
   get "home", to: "pages#home"
