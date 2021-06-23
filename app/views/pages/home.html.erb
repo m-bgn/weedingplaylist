@@ -1,9 +1,9 @@
-<div class="container">
-  <div class="home-song">
-    <%= link_to "Add a new song", new_song_path%>
+<div class="container d-flex content-center h-100">
+  <div class="home-song card justify-content-center">
+    <%= link_to "Add a new song", new_song_path, class: "btn-home-sg"%>
   </div>
-  <div class="home-playlist">
-    <%= link_to "See playlist", playlist_path%>
+  <div class="home-playlist card justify-content-center">
+    <%= link_to "See playlist", playlist_path, class: "btn-home-pl"%>
   </div>
 </div>
 

@@ -3,9 +3,23 @@ body {
   background-color: #172938;
 }
 
-.home-song {
+div.home-song {
   border: 20px;
+  background-color: yellow;
+  width: 50%;
+  text-align: center;
 }
-.home-playlist {
+div.home-playlist {
   border: 20px;
+  background-color: orangered;
+  width: 50%;
+  text-align: center;
+}
+
+.btn-home-sg {
+
+}
+
+.btn-home-pl {
+
 }
